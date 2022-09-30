@@ -16,8 +16,8 @@ for (let i = 0; i < array.length; i++){
 
 console.log(value)
 
-// Runtime =  o(n)
-// Space Complexity = o(1)
+// Runtime =  o(n^2)
+// Space Complexity = o(n)
 
 // 2. Unique Characters
 
@@ -69,4 +69,4 @@ function findLongestWord(str) {
 console.log(findLongestWord("hi, hello world!"))
 
 // Runtime =  o(1)
-// Space Complexity = o(1)
+// Space Complexity = o(n)
