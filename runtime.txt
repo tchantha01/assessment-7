@@ -1,0 +1,21 @@
+The extraLargeArray takes less time to run in the doubleAppend function because the result is being pushed directly into the array. Whereas the doubleInsert function is causing a cascade of index movements to make room for the result.
+
+-------------------------------------------------------------------
+
+Runtimes:              doubleAppend              doubleInsert
+
+extraLargeArray          3.6 ms                      1.2 sec
+
+largeArray               663 us                      11.1 ms
+
+mediumArray              264.8 us                    220.1 us 
+
+smallArray               125.2 us                     65.7 us
+
+tinyArray                110.4 us                     42.2 us
+
+--------------------------------------------------------------------
+
+NOTE: see graph saved as 'runtime-graph.png' in the assessment folder
+
+From tinyArray to mediumArray, the doubleInsert function runtime is faster the doubleAppend function. As the array size continues to grow, the doubleInsert function becomes the slower of the two functions. Looking at the graph the doubleInsert function shows a more consistent curve from the tinyArray to the mediumArray. Any size passed through this range will have a faster runtime than the doubleAppend function. The doubleAppend function scales better from the mediumArray to the extraLargeArray range. 
